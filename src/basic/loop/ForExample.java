@@ -28,10 +28,13 @@ public class ForExample {
         System.out.println("정수 1개 입력: ");
         int num = scanner.nextInt();
         int result = 1;
-        for (int i = 0; i <= num ; i++) {
-            result *= num;
-            num--;
-            }
-        System.out.println(result);
+
+        for (int i = num; i >= 1 ; i--) {
+            result *= i;
         }
+
+        System.out.println(result);
+
     }
+
+}
